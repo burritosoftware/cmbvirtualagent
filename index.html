@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>CMB Virtual Agent</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<script src="https://unpkg.com/tripetto-runner-foundation"></script>
+<script src="https://unpkg.com/tripetto-runner-chat"></script>
+<script src="https://unpkg.com/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiRnVtMklGbDloY2daZHhWdUVrMHRCN01VTmZZamRSWG1NZVBMTWM4aVJycz0iLCJkZWZpbml0aW9uIjoiS2JXMjhmVnNLTjNicmFqN0dDeTNXMGNIaDFZSTJQNXpYSEZSSG5MSjNuUT0iLCJ0eXBlIjoiY29sbGVjdCJ9.3Pex7DSG0Lfj1gXarnuKVb_qohcpjJm2JxGm0f-Ep6A" });
+
+TripettoChat.run({
+    element: document.body, /* Or supply your own element here */
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit,
+    snapshot: tripetto.snapshot,
+    onPause: tripetto.onPause
+});
+</script>
+</head>
+<body>
+<h1>Hi.</h1>
+<h2>Click it, real good</h2>
